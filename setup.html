@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> account setup</title>
+    <link rel="stylesheet" href="DigiMEDRecords.css">
+</head>
+<body class="introtomain">
+    <div class="finishsetup">
+        <p>
+            <label for="dob"> Date Of Birth: </label>
+            <input type="datetime-local" id="Test_DatetimeLocal">
+
+        </p>
+        <p>
+            <label for = "gen">Choose your gender: </label>
+            <!-- <input id ="gen" type ="text" placeholder="gender" name="gen"> -->
+            <select name="gen" id="gen">
+                <option value ="female">FEMALE</option>
+                <option value ="male">MALE</option>
+                <option value ="transgender">TRANSGENDER</option>
+                <option value ="non-binary">NON-BINARY</option>
+            </select>
+        </p>
+        <p>
+            <label for = "lang">Choose your language preference: </label>
+            <select name="lang" id="lang">
+                <option value ="english">ENGLISH</option>
+                <option value ="hindi">HINDI</option>
+            </select>
+        </p>
+        <p>
+            <label for = "notif">Choose how you would like to receive notifications: </label>
+            <select name="notif" id="notif">
+                <option value ="sms">via sms (through phone number)</option>
+                <option value ="email">via mail (through email address)</option>
+            </select>
+        </p>
+        <header>
+            <h3>Choose Region Code in India</h3>
+        </header>
+        <main>
+            <section>
+                <h3>Select Your State</h3>
+                <select id="state">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </section>
+            <section>
+                <h2>Select Your City</h2>
+                <select id="city">
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                </select>
+            </section>
+            <section>
+                <h2>Selected Region Code</h2>
+                <p id="region-code"></p>
+            </section>
+        </main>
+        <header>
+            <h3>Terms of Service</h3>
+        </header>
+        <main>
+            <section>
+                <h3>Introduction</h3>
+                <p>Welcome to our website. By accessing or using our website, you agree to be bound by these terms of service. If you do not agree to all of these terms, do not use our website.</p>
+            </section>
+            <section>
+                <h3>Use of Website</h3>
+                <p>You may use our website for lawful purposes only. You may not use our website:</p>
+                <ul>
+                    <li>In any way that violates any applicable federal, state, local, or international law or regulation.</li>
+                    <li>To engage in any conduct that is fraudulent, misleading, or harmful.</li>
+                    <li>To transmit or upload any viruses, Trojan horses, worms, or other harmful or disruptive software or data.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Intellectual Property</h3>
+                <p>All content on our website, including but not limited to text, graphics, logos, images, and software, is the property of our company and is protected by U.S. and international copyright laws.</p>
+            </section>
+            <section>
+                <h3>Limitation of Liability</h3>
+                <p>Our company shall not be liable for any damages arising out of or in connection with the use or inability to use our website or its content, including but not limited to damages for loss of profits, business interruption, or loss of data.</p>
+            </section>
+        </main>
+        <form>
+            <label for="agree">I agree to the terms and conditions:</label>
+            <input type="checkbox" id="agree" name="agree">
+        </form>
+        <footer>
+            <p>These terms of service were last updated on January 1, 2023.</p>
+        </footer>
+        <form action="C:\Users\User\OneDrive\Desktop\Shreya\Shreya\PROJECTS\DigiMEDRecords\mainpage.html">
+            <button class="setupbutton">FINISH SET UP</button>
+        </form>
+    </div>
+
+    <script src="DigiMEDRecords.js">
+        alert("Please finish setting up your account.");
+    </script>
+    
+</body>
+</html>
