@@ -65,5 +65,3 @@ if (downloadLink && passwordForm) {
 } else {
   console.error("downloadLink or passwordForm element not found.");
 }
-
-
