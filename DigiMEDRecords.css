@@ -20,10 +20,50 @@ img {
   width: 100%;
 }
 
+/*intro page*/
+/* Cover page styles */
+.coverpage {
+  text-align: center;
+  background-color: #619B8A;
+  height: 500px;
+}
+
+.coverpage img {
+  width: 500px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Sign-up button styles */
+.buttonSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.centered-button {
+  padding: 10px 40px;
+  font-size: 16px;
+  background-color: #233D4D;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from anchor */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.centered-button:hover {
+  background-color: #0056b3; /* Darken color on hover */
+}
+
+
+
+
 /* Header Styles */
 
 .hero {
-  background-color: #4CAF50;
+  background-color: #619B8A;
   padding: 20px;
   
 }
@@ -37,7 +77,6 @@ img {
 }
 
 .navbar .logo {
-  width: 50px; /* Adjust the size of the logo */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -56,17 +95,15 @@ img {
 .navbar .user-pic {
   width: 40px; /* Adjust the size of the user picture */
   height: 40px; /* Maintain aspect ratio */
-  border-radius: 50%; /* Make it circular */
   cursor: pointer; /* Show pointer cursor on hover */
 }
 
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100%;
   align-self: left;
   vertical-align: middle;
-  border-radius: 50%;
 }
 
 .user-pic {
@@ -82,7 +119,7 @@ img {
   color: #333; /* Change color to match your design */
   margin-top: 20px;
   padding: 20px;
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #849A8D; /* Light gray background */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   max-width: 600px; /* Limit width to improve readability */
@@ -90,7 +127,7 @@ img {
   margin-right: auto;
 }
 .about h2{
- color: #025176;
+ color: #DBF9F4;
  margin-bottom: none;
  padding-bottom: 0%;
 }
@@ -131,6 +168,161 @@ img {
 .sub-menu-link p {
   margin: 0;
   padding: 0;
+}
+
+/*virtual health score style*/
+.healthScore{
+  text-align: center;
+  color: #333; /* Change color to match your design */
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  max-width: 600px; /* Limit width to improve readability */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto;
+}
+
+/*sign-up page style*/
+.boxdesign {
+  max-width: 400px;
+  margin: 50px auto; /* Center the form horizontally */
+  padding: 20px;
+  background-color: #849A8D;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.boxdesign h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.boxdesign p {
+  margin-bottom: 20px;
+}
+
+.boxdesign label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.boxdesign input[type="text"],
+.boxdesign input[type="password"],
+.boxdesign select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #233D4D;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure the padding and border are included in the width */
+}
+
+.boxdesign button.signupsubmit {
+  width: 100%;
+  padding: 10px 60px;
+  margin-left: 72px;
+  background-color:#233D4D ; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boxdesign button.signupsubmit:hover {
+  background-color: #233D4D; /* Darker green color on hover */
+}
+
+/*set-up page style*/
+.finishsetup {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.finishsetup p {
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.finishsetup header,
+.finishsetup main,
+.finishsetup footer {
+  margin-bottom: 20px;
+}
+
+.finishsetup h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #849A8D;
+}
+
+.finishsetup select,
+.finishsetup input[type="datetime-local"],
+.finishsetup button.setupbutton {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.finishsetup input[type="datetime-local"] {
+  background-color: #f8f9fa;
+}
+
+.finishsetup select {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.finishsetup button.setupbutton {
+  background-color: #233D4D;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finishsetup button.setupbutton:hover {
+  background-color: #233D4D;
+}
+
+.finishsetup footer {
+  text-align: center;
+  color: #6c757d;
+}
+
+.finishsetup input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.finishsetup label[for="agree"] {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.finishsetup label[for="agree"],
+.finishsetup label[for="agree"] a {
+  text-decoration: none;
+  color: #233D4D;
+}
+
+.finishsetup label[for="agree"] a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .finishsetup {
+      padding: 20px;
+  }
 }
 
 /* Main Content Styles */
@@ -212,7 +404,7 @@ label[for="file"] {
 
 button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #233D4D;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -221,7 +413,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #619B8A;
 }
 
 .editcancel {
