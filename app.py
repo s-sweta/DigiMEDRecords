@@ -8,7 +8,7 @@ model = joblib.load('health_pred=.joblib')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index1.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
