@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Score Prediction</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #333; /* You can change the color as per your preference */
+        }
+
+        /* Apply styles to the form */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Apply styles to the form inputs */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555; /* You can change the color as per your preference */
+        }
+
+        form input[type="number"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        /* Apply styles to the button */
+        form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #007bff; /* You can change the color as per your preference */
+            color: #fff; /* You can change the color as per your preference */
+            cursor: pointer;
+        }
+
+        /* Style the button on hover */
+        form button:hover {
+            background-color: #0056b3; /* You can change the color as per your preference */
+        }
+    </style>
+</head>
+<body>
+    <h1>Health Score Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="exercise">Exercise per Week:</label>
+        <input type="number" id="exercise" name="exercise" required><br><br>
+
+        <label for="calories">Calories per Day:</label>
+        <input type="number" id="calories" name="calories" required><br><br>
+
+        <label for="protein">Protein per Day:</label>
+        <input type="number" id="protein" name="protein" required><br><br>
+
+        <label for="water">Water per Day:</label>
+        <input type="number" id="water" name="water" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+
+        <label for="Number_of_Case_Histories">Number of Case History:</label>
+        <input type="number" id="Number_of_Case_Histories" name="Number_of_Case_Histories" required><br><br>
+
+        <label for="Years_Taking_Medicine">Years of Medication:</label>
+        <input type="number" id="Years_Taking_Medicine" name="Years_Taking_Medicine" required><br><br>
+
+
+
+        <button type="submit">Predict Health Score</button>
+    </form>
+</body>
+</html>
