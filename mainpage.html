@@ -22,6 +22,7 @@
                         <a href="casehistory.html">Case History</a>
                         <a href="medrecords.html">Medical Records</a>
                         <a href="medication.html">Medications</a>
+                        <a href="editprofile.html">edit profile</a>
                         <img class="user-pic" src="randperson.jpg" onclick="toggleMenu()" >
                     </div>
                     
@@ -33,11 +34,11 @@
                                 <h2>Venkata Shreya</h2>
                             </div>
                             <hr>
-                            <a href="myprofile.html" class="sub-menu-link">
+                            <!-- <a href="editprofile.html" class="sub-menu-link">
                                 <img src="randperson.jpg">
                                 <p>My Profile</p>
                                 <span></span>
-                            </a>
+                            </a> -->
         
                             <a href="editprofile.html" class="sub-menu-link">
                                 <img src="editprofile.png">
@@ -64,6 +65,12 @@
         <a href="http://127.0.0.1:5000"><button class="score">Predict Health Score</button></a>
     </div>
     
-    <script src="DigiMEDRecords.js"></script>
+    <script>
+        let subMenu = document.getElementbyId("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+
+    </script>
 </body>
 </html>
