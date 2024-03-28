@@ -1,18 +1,18 @@
 console.log("JavaScript file loaded.");
 
 // Check if the subMenu element is correctly identified
-let subMenu = document.getElementById("subMenu");
-console.log("subMenu:", subMenu);
+// let subMenu = document.getElementById("subMenu");
+// console.log("subMenu:", subMenu);
 
-// Check if the toggleMenu function is defined and called
-function toggleMenu() {
-  console.log("toggleMenu function called.");
-  if (subMenu) {
-    subMenu.classList.toggle("open-menu");
-  } else {
-    console.error("subMenu element not found.");
-  }
-}
+// // Check if the toggleMenu function is defined and called
+// function toggleMenu() {
+//   const subMenu = document.getElementById("subMenu");
+//   if (subMenu) {
+//       subMenu.classList.toggle("open-menu");
+//   } else {
+//       console.error("subMenu element not found.");
+//   }
+// }
 
 // Check if downloadLink is correctly identified
 const downloadLink = document.querySelector('.download-link');
